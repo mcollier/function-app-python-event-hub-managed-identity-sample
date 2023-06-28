@@ -12,3 +12,4 @@ _This is a sample project that is currently under development. Use at your own r
 ### Notes
 
 - The `deploy-and-publish.sh` script will attempt to assign the `USER_PRINCIPAL_NAME` (in the .env file) to the Storage Blob Data Contributor role.
+- The project does not _yet_ support the Azure Developer CLI (AZD).  AZD support is a goal for a future update.
