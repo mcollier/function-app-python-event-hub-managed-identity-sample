@@ -27,6 +27,7 @@
 		"ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {},
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/azure/azure-dev/azd:latest": {}
 	}
 }
