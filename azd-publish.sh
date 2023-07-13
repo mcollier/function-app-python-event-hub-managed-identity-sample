@@ -25,6 +25,7 @@ source "$script_dir/.azure/pythonfunction1/.env"
 pushd src
 
 pip install --target "./.python_packages/lib/site-packages" -r ./requirements.txt --upgrade
+# pip install --target "./src/.python_packages/lib/site-packages" -r ./src/requirements.txt --upgrade
 
 zip -r function.zip . \
     -x ".devcontainer/*" \
@@ -35,6 +36,11 @@ zip -r function.zip . \
     -x "local.settings.json" \
     -x "function/*"
 
+# Use AZD to create the package (zip) file.
+# echo -e "\n== Creating the package (zip) file using the Azure Developer CLI (AZD)"
+# azd package
+
+# TODO: How to get the path to the package created by AZD?
 
 # Upload and set the package
 PACKAGE_URL="https://$STORAGE_ACCOUNT_NAME.blob.core.windows.net/$STORAGE_CONTAINER_NAME/function.zip"
