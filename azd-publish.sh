@@ -72,3 +72,6 @@ az functionapp config appsettings set \
     --settings WEBSITE_RUN_FROM_PACKAGE="$PACKAGE_URL"
 
 popd
+
+# NOTE: Zip deploy does NOT work when using identity-based connection with AzureWebJobsStorage.  The ZIP API attempts to write to the storage account in AzureWebJobsStorage.
+#       The ZIP API only knows how to work with storage accounts via the storage key, not a managed identity.
