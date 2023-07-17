@@ -19,6 +19,7 @@ echo -e "\n== Deploying main resources via Azure Developer CLI (AZD)"
 azd provision
 
 # Load the AZD environment variables (containing outputs of the AZD command)
+# TODO: Try to determine the AZD environment instead of hardcoding it.
 source "$script_dir/.azure/pythonfunction1/.env"
 
 # Create the package
